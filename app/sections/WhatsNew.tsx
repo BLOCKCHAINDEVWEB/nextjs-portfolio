@@ -1,23 +1,23 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
 
-import { newFeaturesContent, newFeatures } from '@/constants'
+import { newFeaturesContent, newFeatures, newFeatureCards } from '@/constants'
 import TypingText from '@/components/TypingText'
 import TitleText from '@/components/TitleText'
+import TasksCard from '@/components/TasksCard'
 import NewFeatures from '@/components/NewFeatures'
-import { variants, staggerContainer, fadeIn } from '@/utils/motion'
+import { variants, staggerContainer, fadeIn, textVariant } from '@/utils/motion'
 
 export default function WhatsNew({ lang }: { lang: string }) {
   const { typingText, title } =
     lang === 'en' ? newFeaturesContent.en : newFeaturesContent.fr
-
   const newFeaturesTranslated = lang === 'en' ? newFeatures.en : newFeatures.fr
+  const newFeatureCardsTranslated =
+    lang === 'en' ? newFeatureCards.en : newFeatureCards.fr
 
   return (
-    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
+    <section className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -38,27 +38,29 @@ export default function WhatsNew({ lang }: { lang: string }) {
           </div>
         </motion.div>
 
-        <motion.div
-          variants={variants('right')}
-          className="flex-1 flex flex-col justify-center items-center"
-        >
-          <Link href="https://dashboard.feature.sh/" target="_blank">
-            <Image
-              src="/img/dashboard_capture.png"
-              alt="get-started"
-              className="w-[90%] h-[90%] object-contain"
-              width={500}
-              height={500}
-            />
-          </Link>
-          <Image
-            src="/img/startme_capture.png"
-            alt="StartMe Dashboard Feature.sh"
-            className="w-[90%] h-[90%] object-contain"
-            width={500}
-            height={500}
-          />
-        </motion.div>
+        {newFeatureCardsTranslated.map(
+          (project, index) =>
+            index === 0 && (
+              <TasksCard key={`news-${index}`} index={index} {...project} />
+            )
+        )}
+      </motion.div>
+
+      <motion.div
+        variants={staggerContainer(0, 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
+      >
+        <div className="flex flex-wrap justify-between mt-20 -mx-2">
+          {newFeatureCardsTranslated.map(
+            (project, index) =>
+              index !== 0 && (
+                <TasksCard key={`news-${index}`} index={index} {...project} />
+              )
+          )}
+        </div>
       </motion.div>
     </section>
   )

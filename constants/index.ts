@@ -154,25 +154,11 @@ export const newFeatures = {
       subtitle:
         "Il s'agit d'une réalisation, qui a nécessité plusieurs savoir-faire, pour inciter à la rémunération des développeurs.",
       href: 'https://dashboard.feature.sh/',
-      tags: [
-        {
-          name: 'react',
-          color: 'blue-text-gradient',
-        },
-        {
-          name: 'mongodb',
-          color: 'green-text-gradient',
-        },
-        {
-          name: 'tailwind',
-          color: 'pink-text-gradient',
-        },
-      ],
     },
     {
       imgFile: 'avatar-n1c0.jpeg',
       title: 'Nicolas Wagner',
-      subtitle: 'Le CEO avec qui nous avons réalisé FEATURE',
+      subtitle: 'Le CEO, fondateur de FEATURE et developer web/web3 senior.',
       href: 'https://github.com/n1c01a5',
     },
   ],
@@ -187,8 +173,113 @@ export const newFeatures = {
     {
       imgFile: 'avatar-n1c0.jpeg',
       title: 'Nicolas Wagner',
-      subtitle: 'The CEO with whom we made FEATURE',
+      subtitle: 'The CEO, founder of FEATURE and senior web/web3 developer.',
       href: 'https://github.com/n1c01a5',
+    },
+  ],
+}
+
+export const newFeatureCards = {
+  fr: [
+    {
+      name: '',
+      description: '',
+      imgFile: 'startme_capture.png',
+      logo_link: '',
+      logo_img: '',
+      source_img_link: '',
+      collection: 'news',
+    },
+    {
+      name: 'Dapp',
+      description:
+        "La Dapp centralise toutes les transactions initiées à partir d'une issue Github, incluant les transactions, les réclamations, les défis, les paiements, les remboursements, etc.",
+      imgFile: 'dapp_claim_capture.png',
+      logo_link: 'https://evm.app.feature.sh/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://evm.app.feature.sh/',
+      collection: 'news',
+    },
+    {
+      name: 'Dashboard',
+      description:
+        "Le Dashboard offre un accès aux portefeuilles, permet de fixer la rémunération en tokens, d'émettre de nouveaux tokens et de configurer un arbitrage.",
+      imgFile: 'dashboard_capture.png',
+      logo_link: 'https://dashboard.feature.sh/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://dashboard.feature.sh/',
+      collection: 'news',
+    },
+    {
+      name: 'Jobsboard',
+      description:
+        'Le JobsBoard répertorie toutes les issues en cours, accompagnées de leurs étiquettes, et permet de calculer les montants des tokens par organisations Github.',
+      imgFile: 'jobsboard_capture.png',
+      logo_link: 'https://jobs.feature.sh/jobs/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://jobs.feature.sh/jobs/',
+      collection: 'news',
+    },
+    {
+      name: '_mastercode',
+      description:
+        'Plateforme de formation en ligne de développement Web / Blockchain / IA, pour les développeurs débutants aux plus avancés.',
+      imgFile: 'mastercode-home-page.png',
+      logo_link: 'https://mastercode.cc/fr',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://mastercode.cc/fr',
+      collection: 'news',
+    },
+  ],
+  en: [
+    {
+      name: '',
+      description: '',
+      imgFile: 'startme_capture.png',
+      logo_link: '',
+      logo_img: '',
+      source_img_link: '',
+      collection: 'news',
+    },
+    {
+      name: 'Dapp',
+      description:
+        'The Dapp centralizes all transactions initiated from a Github issue, including transactions, complaints, challenges, payments, refunds, etc.',
+      imgFile: 'dapp_claim_capture.png',
+      logo_link: 'https://evm.app.feature.sh/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://evm.app.feature.sh/',
+      collection: 'news',
+    },
+    {
+      name: 'Dashboard',
+      description:
+        "Le Dashboard offre un accès aux portefeuilles, permet de fixer la rémunération en tokens, d'émettre de nouveaux tokens et de configurer un arbitrage.",
+      imgFile: 'dashboard_capture.png',
+      logo_link: 'https://dashboard.feature.sh/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://dashboard.feature.sh/',
+      collection: 'news',
+    },
+    {
+      name: 'Jobsboard',
+      description:
+        'The JobsBoard lists all current issues, along with their labels, and allows you to calculate token amounts by Github organizations.',
+      imgFile: 'jobsboard_capture.png',
+      logo_link: 'https://jobs.feature.sh/jobs/',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://jobs.feature.sh/jobs/',
+      collection: 'news',
+    },
+    {
+      name: '_mastercode',
+      description:
+        'Online Web/Blockchain/AI development training platform, for beginners to more advanced developers.',
+      imgFile: 'mastercode-home-page.png',
+      logo_link: 'https://mastercode.cc/en',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://mastercode.cc/en',
+      collection: 'news',
     },
   ],
 }
@@ -219,6 +310,7 @@ export const tasksCards = {
       logo_link: 'https://www.lucidchart.com/',
       logo_img: 'lucid-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Errors logs',
@@ -227,6 +319,7 @@ export const tasksCards = {
       logo_link: 'https://nextjs.org/',
       logo_img: 'react-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'n8n workflow',
@@ -235,6 +328,7 @@ export const tasksCards = {
       logo_link: 'https://n8n.io/',
       logo_img: 'n8n-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Backend uptime status',
@@ -243,6 +337,7 @@ export const tasksCards = {
       logo_link: 'https://uptimerobot.com/',
       logo_img: 'uptime-robot-logo.png',
       source_img_link: 'https://status.feature.sh/',
+      collection: 'tasks',
     },
     {
       name: 'Subgraph of The Graph',
@@ -251,6 +346,7 @@ export const tasksCards = {
       logo_link: 'https://thegraph.com/',
       logo_img: 'the-graph-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Dune Analytics',
@@ -260,6 +356,7 @@ export const tasksCards = {
       logo_img: 'dune-logo.svg',
       source_img_link:
         'https://dune.com/blockchaindevweb/feature-gnosis-chain-xdai-usage',
+      collection: 'tasks',
     },
   ],
   en: [
@@ -271,6 +368,7 @@ export const tasksCards = {
       logo_link: 'https://www.lucidchart.com/',
       logo_img: 'lucid-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Errors logs',
@@ -279,6 +377,7 @@ export const tasksCards = {
       logo_link: 'https://nextjs.org/',
       logo_img: 'react-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'n8n workflow',
@@ -287,6 +386,7 @@ export const tasksCards = {
       logo_link: 'https://n8n.io/',
       logo_img: 'n8n-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Backend uptime',
@@ -295,6 +395,7 @@ export const tasksCards = {
       logo_link: 'https://uptimerobot.com/',
       logo_img: 'uptime-robot-logo.png',
       source_img_link: 'https://status.feature.sh/',
+      collection: 'tasks',
     },
     {
       name: 'Subgraph of The Graph',
@@ -303,6 +404,7 @@ export const tasksCards = {
       logo_link: 'https://thegraph.com/',
       logo_img: 'the-graph-logo.png',
       source_img_link: '',
+      collection: 'tasks',
     },
     {
       name: 'Dune Analytics',
@@ -312,6 +414,7 @@ export const tasksCards = {
       logo_img: 'dune-logo.svg',
       source_img_link:
         'https://dune.com/blockchaindevweb/feature-gnosis-chain-xdai-usage',
+      collection: 'tasks',
     },
   ],
 }

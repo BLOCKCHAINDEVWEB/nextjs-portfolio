@@ -20,7 +20,7 @@ const TasksPage = ({ params }: { params: { id: string } }) => {
   const { imgFile } = tasksCardsTranslated[parseInt(id)] || {}
 
   return (
-    <div className="flex w-full h-screen justify-center items-center">
+    <div className="flex items-center justify-center w-full h-screen">
       <Image
         src={`/img/${imgFile}`}
         alt="project tasks image"

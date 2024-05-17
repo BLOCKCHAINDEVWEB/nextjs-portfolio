@@ -32,7 +32,7 @@ export default function Navbar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="sm:px-16 px-6 py-8 relative"
+      className="relative px-6 py-8 sm:px-16"
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
       <div className="2xl:max-w-[1280px] w-full mx-auto flex justify-between gap-8">
@@ -50,10 +50,10 @@ export default function Navbar() {
             )}
           </div>
           <ThemeButton theme={theme} setTheme={setTheme} />
-          <div className="flex items-center gap-2 rounded-lg cursor-pointer mr-4">
-            <Link href="https://github.com/BLOCKCHAINDEVWEB/nextjs-13-portfolio">
+          <div className="flex items-center gap-2 mr-4 rounded-lg cursor-pointer">
+            <Link href="https://github.com/BLOCKCHAINDEVWEB/nextjs-portfolio">
               <div className="flex justify-between">
-                <span className="text-black dark:text-white font-bold pr-1">
+                <span className="pr-1 font-bold text-black dark:text-white">
                   Repo
                 </span>
                 <Image

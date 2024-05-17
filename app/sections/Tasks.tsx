@@ -15,7 +15,7 @@ export default function Tasks({ lang }: { lang: string }) {
   const tasksCardsTranslated = lang === 'en' ? tasksCards.en : tasksCards.fr
 
   return (
-    <section className="sm:p-16 xs:p-8 px-6 py-12">
+    <section className="px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -33,7 +33,7 @@ export default function Tasks({ lang }: { lang: string }) {
         >
           {content}
         </motion.p>
-        <div className="mt-20 flex flex-wrap justify-between -mx-2">
+        <div className="flex flex-wrap justify-between mt-20 -mx-2">
           {tasksCardsTranslated.map((project, index) => (
             <TasksCard key={`tasks-${index}`} index={index} {...project} />
           ))}
